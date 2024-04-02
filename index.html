@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Data Analytics Using Azure Cloud</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font family */
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #007bff;
+            color: white;
+            padding: 30px; /* Increase header and footer padding */
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px; /* Increase header font size */
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for header */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .step {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 50px;
+        }
+        .step .step-content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center; /* Center content horizontally */
+        }
+        .step img {
+            max-width: calc(100% - 100px); /* Adjust image width to fit container */
+            max-height: 480px;
+            object-fit: cover;
+            border: 2px solid #ADD8E6; /* Light blue border */
+            margin-right: 20px;
+        }
+        .step-description {
+            border-left: 2px solid #ADD8E6; /* Light blue border */
+            padding-left: 20px;
+        }
+        .step-text {
+            font-size: 16px;
+            color: #333;
+            max-width: 220px; /* Increase width by 20px */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflow text */
+            text-overflow: ellipsis; /* Show ellipsis for overflow text */
+            margin-bottom: 10px;
+        }
+        .step-description-text {
+            font-size: 18px;
+            color: #333;
+            max-width: 320px; /* Increase width by 20px */
+            word-wrap: break-word; /* Allow long words to break */
+        }
+
+        /* For smaller screens */
+        @media (max-width: 800px) {
+            .step .step-content {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+                align-items: flex-start; /* Align items to the start of the container */
+            }
+
+            .step img {
+                max-width: calc(100% - 100px); /* Adjust image width to fit container */
+                max-height: 300px; /* Adjust max height for smaller screens */
+                margin-right: 0; /* Remove margin for smaller screens */
+                margin-bottom: 20px; /* Add bottom margin for spacing */
+            }
+
+            .step-text {
+                max-width: 240px; /* Increase width by 20px */
+            }
+
+            .step-description-text {
+                max-width: 340px; /* Increase width by 20px */
+            }
+        }
+        
+        footer {
+            padding: 30px; /* Increase footer padding */
+        }
+        footer a {
+            color: black; /* Change font color to black */
+            font-size: 24px; /* Increase footer font size */
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        footer a:hover {
+            color: #333; /* Change color on hover */
+        }
+        footer i {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+    </style>
+    <!-- Import Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Olympic Data Analytics Using Azure Cloud</h1>
+    </header>
+    <div class="container">
+        <div class="step">
+            <div class="step-content">
+                <img src="Images/image1.jpg" alt="Step 1">
+                <div class="step-description">
+                    <div class="step-text">
+                        <h2>Architecture&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                    </div>
+                    <div class="step-description-text">
+                        <p>Architecture of the project, offering a detailed, step-by-step overview.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-content">
+                <img src="Images/image2.jpg" alt="Step 2">
+                <div class="step-description">
+                    <div class="step-text">
+                        <h2>ADF Pipeline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                    </div>
+                    <div class="step-description-text">
+                        <p>
+                            Image illustrates an ADF pipeline, depicting the process of extracting data from a Git repository and storing it in a Data Lake Gen2 storage account.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-content">
+                <img src="Images/image3.jpg" alt="Step 3">
+                <div class="step-description">
+                    <div class="step-text">
+                        <h2>Databricks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                    </div>
+                    <div class="step-description-text">
+                        <p>Utilized for data cleansing and performing various preprocessing tasks on the data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-content">
+                <img src="Images/image4.jpg" alt="Step 4">
+                <div class="step-description">
+                    <div class="step-text">
+                        <h2>Synapse Analytics</h2>
+                    </div>
+                    <div class="step-description-text">
+                        <p>
+                            Employed for executing various SQL queries, conducting data visualization and dashboarding, and facilitating reporting and self-service BI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/Rohan-R-Raikar">For project data you can visit my GitHub</a>
+    </footer>
+</body>
+</html>
